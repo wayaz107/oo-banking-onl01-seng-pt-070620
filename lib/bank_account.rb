@@ -9,6 +9,7 @@ def initialize(name)
   @name = name
   @balance = 1000
   @status = "open"
+  @balance << self
 end
 
 def deposit(amount)
