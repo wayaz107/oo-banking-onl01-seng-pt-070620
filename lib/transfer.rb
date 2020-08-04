@@ -14,7 +14,7 @@ def valid?
 end
 
 def execute_transaction
- if  @sender.balance > @amount && valid? 
+ if  @sender.balance > @amount && valid? && @status == "pending"
    @sender.deposit(@amount * -1)
    @receiver.deposit (@amount)
    @status = "complete"
