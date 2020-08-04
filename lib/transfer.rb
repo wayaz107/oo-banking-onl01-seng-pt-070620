@@ -21,9 +21,10 @@ def execute_transaction
 elsif @status == "complete"
   puts "Transaction was already executed"
 end
+end
 
 
-  
+
 
 def reverse_transfer
 end
