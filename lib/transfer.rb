@@ -23,10 +23,10 @@ def valid?(name)
 end
 
 def execute_transaction
-end 
+end
 
 def reverse_transfer
-end 
+end
 
 
 end
