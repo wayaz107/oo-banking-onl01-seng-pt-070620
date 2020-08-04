@@ -11,12 +11,12 @@ def initialize(name)
   @status = "open"
 end
 
-def deposit
-  @account << @balance
+def deposit(amount)
+@amount << amount
 end
 
 def display_balance
-  @balance
+  "Your balance is #{@balance}."
 end
 
 def valid?
