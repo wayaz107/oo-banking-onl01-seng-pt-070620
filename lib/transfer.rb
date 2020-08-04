@@ -14,12 +14,12 @@ def sender_valid?(sender)
   sender.valid?
 end
 
-def reciever_valid?(receiver)
+def receiver_valid?(receiver)
 receiver.valid?
 end
 
 def valid?(name)
-  sender_valid?(name) && reciever_valid?(name)
+  sender_valid?(name) && receiver_valid?(name)
 end
 
 def execute_transaction
