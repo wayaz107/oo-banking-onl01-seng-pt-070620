@@ -6,5 +6,5 @@ attr_accessor   :status
     @status = "pending"
   end
 
-  
+
 end
