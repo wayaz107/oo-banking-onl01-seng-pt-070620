@@ -16,15 +16,12 @@ def deposit(amount)
 end
 
 def display_balance
-  "Your balance is #{@balance}."
+  "Your balance is $#{@balance}."
 end
 
 def valid?
-  if status = "open" && @balance > 0
-    return true
-else
-  false
-end
+  !(status = "open" && @balance > 0)
+
 end
 
 def close_account
