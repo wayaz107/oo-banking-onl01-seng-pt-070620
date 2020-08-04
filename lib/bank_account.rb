@@ -1,6 +1,6 @@
 class BankAccount
 
-@account = []
+@balance = []
 
   attr_accessor :balance, :status, :account
   attr_accessor :name
@@ -12,7 +12,7 @@ def initialize(name)
 end
 
 def deposit(amount)
-@amount << amount
+@balance << amount
 end
 
 def display_balance
@@ -28,7 +28,7 @@ end
 end
 
 def close_account
-  @account.clear
+  @balance.clear
 end
 
 end
