@@ -10,12 +10,12 @@ attr_accessor   :status, :sender, :receiver, :amount
   end
 
 
-def sender_valid?
-  bankaccount.valid?
+def sender_valid?(sender)
+  sender.valid?
 end
 
-def reciever_valid?
-bankaccount.valid?
+def reciever_valid?(receiver)
+receiver.valid?
 end
 
 def valid?(name)
