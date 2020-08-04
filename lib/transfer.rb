@@ -9,17 +9,8 @@ attr_accessor   :status, :sender, :receiver, :amount
     @amount = amount
   end
 
-
-def sender_valid?(sender)
-  sender.valid?
-end
-
-def receiver_valid?(receiver)
-receiver.valid?
-end
-
-def valid?(name)
-  sender_valid?(name) && receiver_valid?(name)
+def valid?
+  sender.valid? && receiver.valid?
 end
 
 def execute_transaction
