@@ -2,7 +2,7 @@ class Transfer
   # your code here
 attr_accessor   :status, :sender, :reciever, :transfer_amount
 
-  def initialize(transfer_amount)
+  def initialize(sender, reciever,transfer_amount)
     @sender = sender
     @reciever = reciever
     @status = "pending"
@@ -11,11 +11,11 @@ attr_accessor   :status, :sender, :reciever, :transfer_amount
 
 
 def sender_valid?
-  account.valid?
+  bankaccount.valid?
 end
 
 def reciever_valid?
-account.valid?
+bankaccount.valid?
 end
 
 def valid?(name)
