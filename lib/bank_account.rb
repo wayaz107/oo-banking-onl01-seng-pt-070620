@@ -2,7 +2,7 @@ class BankAccount
 
 @balance = []
 
-  attr_accessor :balance, :status, :account
+  attr_accessor :balance, :status
   attr_accessor :name
 
 def initialize(name)
