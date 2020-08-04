@@ -28,9 +28,6 @@ else
 end
 end
 
-
-
-
 def reverse_transfer
 end
 
