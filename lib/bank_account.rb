@@ -2,7 +2,8 @@ class BankAccount
 
 @account = []
 
-  attr_accessor :name, :balance, :status, :account
+  attr_accessor :balance, :status, :account
+  attr_accessor :name
 
 def initialize(name)
   @name = name
@@ -24,6 +25,6 @@ end
 
 def close_account
   @account.delete
-end 
+end
 
 end
