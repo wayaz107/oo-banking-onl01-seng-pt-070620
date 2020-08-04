@@ -24,11 +24,11 @@ def valid?
     return true
 else
   false
-end 
+end
 end
 
 def close_account
-  @account.delete
+  @account.clear
 end
 
 end
